@@ -1468,22 +1468,22 @@
 
                             <div class="form-group half-width">
                                 <label>Full Name <span class="required">*</span></label>
-                                <input type="text" id="fullName" placeholder="e.g. Ahmed Mohammed" required />
+                                <input type="text" id="fullName" placeholder=>
                             </div>
 
                             <div class="form-group half-width">
                                 <label>Telephone <span class="required">*</span></label>
-                                <input type="tel" id="telephone" placeholder="e.g. 0911-234-567" required />
+                                <input type="tel" id="telephone" placeholder=>
                             </div>
 
                             <div class="form-group">
                                 <label>Kebele <span class="required">*</span></label>
-                                <input type="text" id="kebele" placeholder="e.g. Kebele 01" required />
+                                <input type="text" id="kebele" placeholder=>
                             </div>
 
                             <div class="form-group">
                                 <label>Zone <span class="required">*</span></label>
-                                <input type="text" id="zone" placeholder="e.g. Zone 1" required />
+                                <input type="text" id="zone" placeholder=>
                             </div>
 
                             <!-- Land Details -->
@@ -1570,44 +1570,44 @@
                                         </div>
                                     </div>
                                     <div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:6px;font-size:12px;font-weight:600;color:var(--text-light);">
-                                        <span>📐 Avg1 = (A+B)/2 = <span id="avg1Display">0.00</span> m</span>
-                                        <span>📐 Avg2 = (C+D)/2 = <span id="avg2Display">0.00</span> m</span>
-                                        <span style="color:#1A8A4A;font-size:14px;">📐 Area = <span id="irregularAreaDisplay" style="font-weight:800;font-size:16px;color:#1A4A5A;">0.00</span> m²</span>
+                                        <span> Avg1 = (A+B)/2 = <span id="avg1Display">0.00</span> m</span>
+                                        <span> Avg2 = (C+D)/2 = <span id="avg2Display">0.00</span> m</span>
+                                        <span style="color:#1A8A4A;font-size:14px;"> Area = <span id="irregularAreaDisplay" style="font-weight:800;font-size:16px;color:#1A4A5A;">0.00</span> m²</span>
                                     </div>
                                 </div>
                             </div>
 
                             <!-- Survey Points -->
                             <div class="form-group full-width" style="margin-top:4px;">
-                                <label style="font-size:11px;color:var(--text-light);">📐 SURVEY POINTS</label>
+                                <label style="font-size:11px;color:var(--text-light);"> SURVEY POINTS</label>
                                 <hr style="border:1px solid var(--border);" />
                             </div>
 
                             <div class="form-group full-width">
                                 <div class="survey-points">
                                     <div class="survey-point">
-                                        <div class="point-label">📍 Point 1</div>
+                                        <div class="point-label"> Point 1</div>
                                         <div style="display:flex;gap:6px;">
                                             <input type="text" id="x1" placeholder="X1" style="width:50%;" />
                                             <input type="text" id="y1" placeholder="Y1" style="width:50%;" />
                                         </div>
                                     </div>
                                     <div class="survey-point">
-                                        <div class="point-label">📍 Point 2</div>
+                                        <div class="point-label"> Point 2</div>
                                         <div style="display:flex;gap:6px;">
                                             <input type="text" id="x2" placeholder="X2" style="width:50%;" />
                                             <input type="text" id="y2" placeholder="Y2" style="width:50%;" />
                                         </div>
                                     </div>
                                     <div class="survey-point">
-                                        <div class="point-label">📍 Point 3</div>
+                                        <div class="point-label"> Point 3</div>
                                         <div style="display:flex;gap:6px;">
                                             <input type="text" id="x3" placeholder="X3" style="width:50%;" />
                                             <input type="text" id="y3" placeholder="Y3" style="width:50%;" />
                                         </div>
                                     </div>
                                     <div class="survey-point">
-                                        <div class="point-label">📍 Point 4</div>
+                                        <div class="point-label"> Point 4</div>
                                         <div style="display:flex;gap:6px;">
                                             <input type="text" id="x4" placeholder="X4" style="width:50%;" />
                                             <input type="text" id="y4" placeholder="Y4" style="width:50%;" />
@@ -1619,7 +1619,7 @@
                             <!-- Coordinates Display -->
                             <div class="form-group full-width">
                                 <div class="result-group">
-                                    <label>📌 Concatenated Coordinates</label>
+                                    <label> Concatenated Coordinates</label>
                                     <output id="coordDisplay" class="result-value">X1/Y1, X2/Y2, X3/Y3, X4/Y4</output>
                                 </div>
                             </div>
@@ -1693,13 +1693,13 @@
             </section>
 
             <!-- ============================================================
-            PAGE: REPORTS - WITH LOGO, HEADER, FOOTER
+            PAGE: REPORTS - 
             ============================================================ -->
             <section id="reports" class="page">
                 <div class="module-card">
                     <h2><i class="fas fa-file-alt"></i> Reports <span class="card-badge">A4</span></h2>
                     <div style="background:rgba(26,74,90,0.06);padding:6px 12px;border-radius:6px;margin-bottom:12px;border-left:3px solid #1A4A5A;font-size:11px;color:var(--text-light);">
-                        <strong>📊 Full A4 report with Office Logo, Header & Footer - NO BUTTONS on print</strong>
+                        <strong>📊 Full A4 report</strong>
                     </div>
 
                     <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:10px;margin-bottom:12px;">
@@ -1770,7 +1770,8 @@
     <script>
         // ================================================================
         // LAND INVENTORY SYSTEM v4.0 - Complete Engine
-        // All 5 Requirements Implemented
+        
+
         // ================================================================
 
         const App = {
@@ -1790,9 +1791,9 @@
             pageOrder: ['registration', 'registered-data', 'reports', 'settings'],
 
             pageTitles: {
-                'registration': '📝 Registration',
-                'registered-data': '📋 Registered Data',
-                'reports': '📊 Reports',
+                'registration': ' Registration',
+                'registered-data': ' Registered Data',
+                'reports': ' Reports',
                 'settings': '⚙️ Settings'
             },
 
@@ -2445,14 +2446,14 @@
                         <div style="font-size:13px;line-height:1.8;">
                             <p><strong>👤 Full Name:</strong> ${record.fullName}</p>
                             <p><strong>📞 Telephone:</strong> ${record.telephone}</p>
-                            <p><strong>📍 Kebele:</strong> ${record.kebele}</p>
-                            <p><strong>📍 Zone:</strong> ${record.zone}</p>
-                            <p><strong>🏡 Block:</strong> ${record.block}</p>
-                            <p><strong>📋 Parcel:</strong> ${record.parcel}</p>
-                            <p><strong>⚖️ Legal Status:</strong> ${record.legalStatus}</p>
-                            <p><strong>📐 Projection:</strong> ${record.projection}</p>
-                            <p><strong>📐 Area:</strong> ${areaDisplay}</p>
-                            <p><strong>📌 Coordinates:</strong> ${record.coords}</p>
+                            <p><strong> Kebele:</strong> ${record.kebele}</p>
+                            <p><strong> Zone:</strong> ${record.zone}</p>
+                            <p><strong> Block:</strong> ${record.block}</p>
+                            <p><strong> Parcel:</strong> ${record.parcel}</p>
+                            <p><strong> Legal Status:</strong> ${record.legalStatus}</p>
+                            <p><strong> Projection:</strong> ${record.projection}</p>
+                            <p><strong> Area:</strong> ${areaDisplay}</p>
+                            <p><strong> Coordinates:</strong> ${record.coords}</p>
                             <p style="border-top:2px solid #ddd;padding-top:10px;font-size:11px;color:#999;">
                                 Registered: ${new Date(record.registeredAt).toLocaleString()}
                             </p>
@@ -2589,14 +2590,14 @@
 
                 html += `
                     <div class="report-grand-total">
-                        <span>📊 GRAND TOTAL AREA</span>
+                        <span> GRAND TOTAL AREA</span>
                         <span>${grandDisplay}</span>
                     </div>
                 `;
 
                 html += `</div>`;
                 container.innerHTML = html;
-                showNotification('📊 Report generated with ' + records.length + ' records on ' + totalPages + ' pages');
+                showNotification(' Report generated with ' + records.length + ' records on ' + totalPages + ' pages');
             },
 
             // ============================================================
@@ -2629,7 +2630,7 @@
                 const ws = XLSX.utils.json_to_sheet(data);
                 XLSX.utils.book_append_sheet(wb, ws, 'Land Records');
                 XLSX.writeFile(wb, 'Land_Inventory_Data.xlsx');
-                showNotification('📊 Exported to Excel');
+                showNotification(' Exported to Excel');
             },
 
             exportAllData() {
@@ -2737,7 +2738,7 @@
                             </head>
                             <body>
                                 <div class="print-header">
-                                    <h2>🏡 Land Registration Form</h2>
+                                    <h2> Land Registration Form</h2>
                                     <p>TOg-Wajale City Administration</p>
                                     <p>Generated: ${new Date().toLocaleString()}</p>
                                 </div>
@@ -2854,14 +2855,14 @@
 
         window.App = App;
 
-        console.log('🏡 Land Inventory System v4.0 - READY');
-        console.log('✅ 5 Requirements Implemented Successfully:');
+        console.log(' Land Inventory System v4.0 - READY');
+        console.log('✅  Requirements Implemented Successfully:');
         console.log('  1. ✅ Irregular 4-Side Area Calculation');
         console.log('  2. ✅ Pagination (20 records per page) + Grand Total with km² conversion');
         console.log('  3. ✅ Permanent Records (stay until manually deleted)');
         console.log('  4. ✅ Office JPEG Logo on Report (placeholder logo)');
         console.log('  5. ✅ Header & Footer on every report page');
-        console.log('📌 All features working with ZERO errors!');
+        console.log(' All features working with ZERO errors!');
     </script>
 
 </body>
