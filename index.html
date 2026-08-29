@@ -1709,7 +1709,7 @@
                     <div class="pagination" id="paginationControls"></div>
 
                     <div id="grandTotalDisplay" class="grand-total" style="display:none;">
-                        <span class="label">📊 GRAND TOTAL AREA</span>
+                        <span class="label"> GRAND TOTAL AREA</span>
                         <span class="value" id="grandTotalValue">0 m²</span>
                     </div>
                 </div>
@@ -1722,7 +1722,7 @@
                 <div class="module-card">
                     <h2><i class="fas fa-file-alt"></i> Reports <span class="card-badge">A4</span></h2>
                     <div style="background:rgba(26,74,90,0.06);padding:6px 12px;border-radius:6px;margin-bottom:12px;border-left:3px solid #1A4A5A;font-size:11px;color:var(--text-light);">
-                        <strong>📊 Full A4 report with Office Logo, Header & Footer</strong>
+                        <strong>📊 Full A4 report </strong>
                     </div>
 
                     <div style="display:grid;grid-template-columns:1fr 1fr 1fr 1fr;gap:10px;margin-bottom:12px;">
@@ -2316,7 +2316,7 @@
                 }
 
                 html += `
-                    <button onclick="App.goToPage(${currentPage + 1})" ${currentPage >= totalPages ? 'disabled' : ''}>
+                    <button onclick="App.goToPage(${currentPage + 1})" ${currentPage >= totalpages ? 'disabled' : ''}>
                         <i class="fas fa-chevron-right"></i>
                     </button>
                     <span class="page-info">${currentPage} / ${totalPages}</span>
